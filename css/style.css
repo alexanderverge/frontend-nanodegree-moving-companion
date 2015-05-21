@@ -1,32 +1,36 @@
-* {box-sizing:border-box;}
-body {background-color: #CCC;}
+* {
+    box-sizing:border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #efefef;
+}
 
 .bgimg {
     position:fixed;
     top: 0;
     left: 0;
-    width:100%;
-    z-index:-1;
-    opacity:1;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
 }
 
-.greeting {
-    color:black;
-    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
-    text-align: center;
+.container {
+    z-index: 100;
 }
 
 .wikipedia-container {
-    float:right;
-    width:290px;
-    padding:10px;
-    margin-right: 10px;
+    padding: 10px;
     background-color: rgba(255,255,255,0.7);
 }
 
 .nytimes-container {
     padding: 10px;
-    margin-right:300px;
     background-color: rgba(255,255,255,0.7);
 }
 
@@ -37,9 +41,40 @@ body {background-color: #CCC;}
 
 .article {
     list-style-type: none;
-    padding:10px;
+    padding: 10px;
     border-top: 1px solid #CCC;
 }
 .article:first-child {
     border-top:none;
+}
+
+.form-container {
+    margin-top: 20px
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -30px;
+    padding: 0 0 30px;
+}
+
+#footer {
+    background-color: #efefef;
+    padding-top: 4px;
+    height: 30px;
+    opacity: 0.75;
+}
+
+/* social media icons */
+.icons {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    opacity: 0.75;
+}
+
+.icons:hover {
+    opacity: 1;
 }
