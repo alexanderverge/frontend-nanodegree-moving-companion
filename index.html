@@ -2,32 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Moving Companion</title>
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Bootstrap Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <form id="form-container" class="form-container">
-        <label for="street">Street: </label><input type="text" id="street" value="">
-        <label for="city">City: </label><input type="text" id="city" value="">
-        <button id="submit-btn">Submit</button>
-    </form>
+    <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="form-container" class="form-container">
+                        <label for="street"><h4>Street: &nbsp;</h4></label><input type="text" id="street" value="">&nbsp;&nbsp;&nbsp;
+                        <label for="city"><h4>City: &nbsp;</h4></label><input type="text" id="city" value="">&nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-default" id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
 
-    <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
 
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+                </div>
+            </div>
 
-
-    <div class="wikipedia-container">
-        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="nytimes-container">
+                        <h3 id="nytimes-header">New York Times Articles</h3>
+                        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wikipedia-container">
+                        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+                        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    <div class="nytimes-container">
-        <h3 id="nytimes-header">New York Times Articles</h3>
-        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</div>
-    </div>
+    <!-- Footer -->
+    <footer id="footer" class="animated fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-sm-8 col-md-9">
+                    <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by Alexander Verge
+                </div>
+                <div class="col-xs-7 col-sm-4 col-md-3">
+                    <div class="row">
+                        <div class="icons">
+                            <div class="col-xs-3 col-sm-3 col-md-3">
+                                <a href="https://github.com/alexanderverge">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3">
+                                <a href="https://www.facebook.com/alex.verge2">
+                                    <i class="fa fa-facebook-official"></i>
+                                </a>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3">
+                                <a href="https://twitter.com/alexanderverge">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="col-xs-3 col-sm-3 col-md-3">
+                                <a href="https://ca.linkedin.com/in/alexanderverge">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/script.js"></script>
